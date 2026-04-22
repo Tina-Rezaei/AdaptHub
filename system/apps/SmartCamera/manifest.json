@@ -1,0 +1,21 @@
+{
+    "name": "SmartCamera",
+    "description": "Get notified of strangers at your door",
+    "serverURL": "",
+    "comp": 1806,
+    "timeBudget": 2800  ,
+    "privacyScore": 3,
+    "modules": [
+
+            {
+                "name": "FaceRecognition",
+                "type": "service",
+                "dependencies": ["Camera"]
+            },
+            {
+                "name": "SmartCamera",
+                "type": "handler",
+                "dependencies": ["Camera","NetworkClient"]
+            }
+    ]
+}

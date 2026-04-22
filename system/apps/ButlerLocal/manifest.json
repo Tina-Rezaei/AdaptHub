@@ -1,0 +1,23 @@
+{
+    "name": "Butler",
+    "description": "Control your smart home devices with voice commands.",
+    "type": "voice-controlled",
+    "commands": ["thermostat make it warmer","lights set color red"],
+    "serverURL": "",
+    "comp": 2043,
+    "timeBudget":  2080,
+    "privacyScore": 4,
+    "modules": [
+        
+        {
+            "name": "SpeechRecognition",
+            "type": "service",
+            "dependencies": ["VoiceAssistant"]
+        },
+        {
+            "name": "Butler",
+            "type": "handler",
+            "dependencies": ["Thermostat","NetworkClient"]
+        }
+    ]
+}

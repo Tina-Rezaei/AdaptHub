@@ -1,0 +1,15 @@
+/**
+ * Basic command.
+ * @example please move the window
+ * @example open a file
+ */
+#JSGF V1.0;
+grammar smart;
+
+public <basicCmd> = <startPolite> <command> <endPolite>;
+
+<startPolite> = (please | kindly | could you | oh mighty computer) *;
+<endPolite> = [ please | thanks | thank you ];
+<command> = <action> <object>;
+<action> = /10/ open |/2/ close |/1/ delete |/1/ move;
+<object> = [the | a] (window | file | menu);

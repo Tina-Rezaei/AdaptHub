@@ -1,0 +1,14 @@
+{
+  "name": "stt-nodejs_wav",
+  "version": "1.0.0",
+  "description": "Simple audio processing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "stt": "^1.0.0",
+    "sox-stream": "^2.0.3"
+  },
+  "license": "Public domain"
+}

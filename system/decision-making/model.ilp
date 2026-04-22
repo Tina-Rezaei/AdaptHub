@@ -1,0 +1,13 @@
+\ Model x86_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ c_u_x127_: 2654.899178 x53 + [ 0.508341 x67 * x39 - 2654.899178 x53 * x39
+   ] <= 3.399e-06
+Bounds
+ x67 >= 0.002
+ x53 >= 1.27001e-05
+Binaries
+ x39
+End

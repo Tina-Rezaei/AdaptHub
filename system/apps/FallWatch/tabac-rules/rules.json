@@ -1,0 +1,25 @@
+[
+    {
+        "if": {
+            "event": "FallDetectionEvent",
+            "context": "equals",
+            "value": true
+        },
+        "then": [
+            {
+                "access": "NetworkClient",
+                "type": "service",
+                "context": {
+                    "period": "6000"
+                }
+            },
+            {
+                "access":"LivingRoomCam",
+                "type": "device",
+                "context":{
+                    "period":"6000"
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "if": {
+            "event": "SpeechRecognitionEvent",
+            "context": "containsAny",
+            "value": ["thermostat make it warmer","lights set color red"]
+        },
+        "then": [
+            {
+                "access": "NetworkClient",
+                "type": "service",
+                "context": {
+                    "period": "50"
+                }
+            },
+            {
+                "access":"Thermostat",
+                "type": "device",
+                "context":{
+                    "period":"50"
+                }
+            },
+            {
+                "access":"VoiceAssistant",
+                "type": "device",
+                "context":{
+                    "period":"50"
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,22 @@
+# AdaptHub Decision-Making Component Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core optimization
+pyomo>=6.4.0
+
+# Data processing
+numpy>=1.21.0
+pandas>=1.3.0
+
+# Visualization (for evaluation scripts)
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Note: Gurobi solver is required but installed separately
+# 1. Obtain a license from https://www.gurobi.com/
+# 2. Install with: pip install gurobipy
+# 3. Activate your license with: grbgetkey <your-license-key>
+#
+# Alternative free solvers (if Gurobi is not available):
+# - GLPK: sudo apt install glpk-utils
+# - CBC: pip install cylp

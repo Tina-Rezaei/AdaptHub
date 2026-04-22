@@ -1,0 +1,21 @@
+{
+    "name": "FallWatch",
+    "description": "Notify care center when a fall is detected. Share a video stream from the camera with a care agent for 10 min",
+    "serverURL": "",
+    "comp": 1324,
+    "timeBudget": 2434,
+    "privacyScore": 1,
+    "modules": [
+        
+        {
+            "name": "FallDetection",
+            "type": "service",
+            "dependencies": ["Camera"]
+        },
+        {
+            "name": "FallWatch",
+            "type": "handler",
+            "dependencies": ["Camera","NetworkClient"]
+        }
+    ]
+}

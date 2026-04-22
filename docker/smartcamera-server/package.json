@@ -1,0 +1,32 @@
+{
+  "name": "net-socket-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start-stt-socket-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs-converter": "^3.12.0",
+    "@tensorflow/tfjs-core": "^3.12.0",
+    "@tensorflow/tfjs-node": "^4.1.0",
+    "@vladmandic/human": "^3.0.1",
+    "dotenv": "^16.0.3",
+    "mqtt": "^4.3.7",
+    "winston": "^3.8.2",
+    "node-fetch": "^2.6.1",
+    "ws": "^8.11.0",
+    "canvas": "^2.10.2"
+
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-plugin-node": "^11.1.0"
+  },
+  "engines": {
+    "node": ">=16.14.2"
+  },
+  "keywords": []
+}

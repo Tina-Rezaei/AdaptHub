@@ -1,0 +1,25 @@
+[
+    {
+        "if": {
+            "event": "FaceRecognitionEvent",
+            "context": "contains",
+            "value": "unknown"
+        },
+        "then": [
+            {
+                "access": "NetworkClient",
+                "type": "service",
+                "context": {
+                    "period": "300"
+                }
+            },
+            {
+                "access":"Doorcam",
+                "type": "device",
+                "context":{
+                    "period":"300"
+                }
+            }
+        ]
+    }
+]
